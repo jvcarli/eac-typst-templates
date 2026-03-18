@@ -1,0 +1,1 @@
+# eac-typst-template
