@@ -1,1 +1,1 @@
-# eac-typst-template
+# eac-typst-slides-template
