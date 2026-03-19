@@ -1,5 +1,5 @@
 #let title-slide(title, subtitle: none, author: none, date: none) = {
-  page(paper: "presentation-4-3", margin: 2cm)[
+  page(paper: "presentation-16-9", margin: 2cm)[
     #set text(size: 24pt)
 
     #align(center + horizon)[

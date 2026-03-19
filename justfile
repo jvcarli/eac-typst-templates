@@ -12,18 +12,18 @@ default:
   @just --list --unsorted
 
 # Compile examples using typst
-compile-examples:
-  @{{mkdirp}} build/examples
-  @{{mkdirp}} build/examples/complex
+compile-examples: _create_build_dir
   typst compile examples/simple.typ build/examples/simple.pdf
-  typst compile examples/complex/main.typ build/examples/complex/complex.pdf
+  typst compile examples/complex/main.typ build/examples/complex.pdf
   typst compile examples/kitchen-sink.typ build/examples/kitchen-sink.pdf
 
 # Compile examples/kitchen-sink.typ using typst watch mode. Meant for development.
-watch-kitchen-sink:
-  @{{mkdirp}} build/examples
+watch-kitchen-sink: _create_build_dir
   typst watch examples/kitchen-sink.typ build/examples/kitchen-sink.pdf
 
 # Clean build artifacts
 clean:
   @{{rmrf}} build
+
+_create_build_dir:
+  @{{mkdirp}} build/examples
