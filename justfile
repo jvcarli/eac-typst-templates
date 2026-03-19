@@ -11,7 +11,7 @@ mkdirp := if os_family() == "windows" { REPO_ROOT / "scripts/mkdirp"} else { "mk
 default:
   @just --list --unsorted
 
-# Compile examples using typst
+# Compile all examples using typst
 compile-examples: _create_build_dir
   typst compile examples/simple.typ build/examples/simple.pdf
   typst compile examples/complex/main.typ build/examples/complex.pdf
@@ -20,6 +20,14 @@ compile-examples: _create_build_dir
 # Compile examples/kitchen-sink.typ using typst watch mode. Meant for development.
 watch-kitchen-sink: _create_build_dir
   typst watch examples/kitchen-sink.typ build/examples/kitchen-sink.pdf
+
+# Build package documentation using mdbook
+docs:
+  mdbook build docs
+
+# Run mdbook server for developing package documentation
+dev-docs:
+  mdbook serve docs
 
 # Clean build artifacts
 clean:

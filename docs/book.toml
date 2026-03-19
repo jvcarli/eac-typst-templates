@@ -1,0 +1,11 @@
+[book]
+title = "Documentação do pacote Typst eac-typst-slides-template"
+src = "."
+authors = ["João Vítor Carli Pereira", "Matheus Eduardo Lunardi Britzke"]
+language = "pt-BR"
+
+[output.html]
+no-section-label = true
+
+[build]
+build-dir = "../build/docs"

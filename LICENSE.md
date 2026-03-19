@@ -1,6 +1,7 @@
 MIT License
 
 Copyright (c) 2026 João Vítor Carli Pereira
+
 Copyright (c) 2026 Matheus Eduardo Lunardi Britzke
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
