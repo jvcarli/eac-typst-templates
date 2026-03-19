@@ -10,8 +10,11 @@ version = "0.1.0"
 [dependencies]
 typst = ">=0.14.2,<0.15"
 
-[feature.dev-environment.dependencies]
+[feature.dev.dependencies]
 just = ">=1.47.0,<2"
 
+[feature.docs.dependencies]
+mdbook = ">=0.5.2,<0.6"
+
 [environments]
-default = { features = ["dev-environment"] }
+default = { features = ["dev", "docs"] }
