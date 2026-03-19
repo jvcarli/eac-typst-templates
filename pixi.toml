@@ -14,7 +14,7 @@ typst = ">=0.14.2,<0.15"
 just = ">=1.47.0,<2"
 
 [feature.docs.dependencies]
-mdbook = ">=0.5.2,<0.6"
+mdbook = "==0.5.2"
 
 [environments]
 default = { features = ["dev", "docs"] }
