@@ -12,6 +12,7 @@ typst = ">=0.14.2,<0.15"
 
 [feature.dev.dependencies]
 just = ">=1.47.0,<2"
+python = ">=3.14.3,<3.15"
 
 [feature.docs.dependencies]
 mdbook = "==0.5.2"

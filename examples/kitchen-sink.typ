@@ -1,17 +1,20 @@
-#import "../src/lib.typ": *
-#title-slide(
+#import "@preview/eac-typst-slides-template:0.1.0" as eac
+
+#eac.title-slide(
   "Título: EAC Typst Slides Template - Kitchen Sink",
   subtitle: "Subtítulo: teste da funcionalidade total do pacote",
   author: "Autores",
   date: "data"
 )
-#slide(title: "Introdução")[
+
+#eac.slide(title: "Introdução")[
   Slide simples
   #v(1cm)
   - Lista
   - Proporção de tela _16:9_
 ]
-#slide(title: "Funcionalidades")[
+
+#eac.slide(title: "Funcionalidades")[
   Enumeração com as funcionalidades do pacote.
   #v(0.5cm)
   + Slides de título
@@ -19,7 +22,8 @@
   + Formatação limpa
   + Configuração de página adequada
 ]
-#slide[
+
+#eac.slide[
   Slide sem título.
   #v(1cm)
   Apenas conteúdo.

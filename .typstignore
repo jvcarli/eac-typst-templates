@@ -1,0 +1,14 @@
+# Files excluded from the package when submitting to Typst Universe.
+# .git and .typstignore are excluded automatically.
+# Prefix a pattern with ! to re-include a previously excluded path.
+.editorconfig
+.gitattributes
+.github
+.gitignore
+.pixi
+.typst
+build
+justfile
+pixi.lock
+pixi.toml
+scripts

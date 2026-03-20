@@ -1,22 +1,22 @@
-#import "../src/lib.typ": *
+#import "@preview/eac-typst-slides-template:0.1.0" as eac
 
-#title-slide(
+#eac.title-slide(
   "Título da Apresentação",
   subtitle: "Subtítulo opcional",
   author: "Autor",
   date: "2026"
 )
 
-#slide(title: "Introdução")[
+#eac.slide(title: "Introdução")[
   - Primeiro ponto
   - Segundo ponto
   - Terceiro ponto
 ]
 
-#slide(title: "Conteúdo")[
+#eac.slide(title: "Conteúdo")[
   Parágrafo de exemplo com conteúdo principal do slide.
 ]
 
-#slide[
+#eac.slide[
   Slide sem título, apenas conteúdo.
 ]
