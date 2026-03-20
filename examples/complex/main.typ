@@ -1,13 +1,13 @@
-#import "../../src/lib.typ": *
+#import "@preview/eac-typst-slides-template:0.1.0" as eac
 
-#title-slide(
+#eac.title-slide(
   "Lorem Ipsum Dolor Sit Amet",
   subtitle: "Uma Apresentação de Exemplo Complexa",
   author: "Fulano de Tal",
   date: "2026"
 )
 
-#slide(title: "Sumário")[
+#eac.slide(title: "Sumário")[
   + Introdução
   + Um Tópico
   + Conclusão

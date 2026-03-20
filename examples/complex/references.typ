@@ -1,5 +1,5 @@
-#import "../../src/lib.typ": *
+#import "@preview/eac-typst-slides-template:0.1.0" as eac
 
-#slide(title: "Referências")[
+#eac.slide(title: "Referências")[
   #bibliography("references.bib", title: none)
 ]
