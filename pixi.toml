@@ -5,7 +5,13 @@ name = "eac-typst-slides-template"
 platforms = ["win-64", "linux-64"]
 version = "0.1.0"
 
-[tasks]
+# Set TYPST_PACKAGE_CACHE_PATH environment variable
+# so the Typst language server can provide features like autocomplete and go to definition.
+[target.linux-64.activation.env]
+TYPST_PACKAGE_CACHE_PATH = "$PIXI_PROJECT_ROOT/.typst/cache"
+
+[target.win-64.activation.env]
+TYPST_PACKAGE_CACHE_PATH = "%PIXI_PROJECT_ROOT%\\.typst\\cache"
 
 [dependencies]
 typst = ">=0.14.2,<0.15"
