@@ -16,19 +16,19 @@ mkdirp := if os_family() == "windows" { REPO_ROOT / "scripts/mkdirp"} else { "mk
 default:
   @just --list --unsorted
 
-# Set up the dev environment
-setup:
-    python scripts/symlink_pkg.py
+# Set up the dev environment (symlink package into .typst/cache and install git hooks)
+setup: _symlink_pkg
+  prek install
 
 # Compile all examples using typst
-compile-examples: setup _create_build_dir
-  typst compile examples/simple.typ build/examples/simple.pdf
+compile-examples: _symlink_pkg _create_build_dir
+  typst compile examples/simple/main.typ build/examples/simple.pdf
   typst compile examples/complex/main.typ build/examples/complex.pdf
-  typst compile examples/kitchen-sink.typ build/examples/kitchen-sink.pdf
+  typst compile examples/kitchen-sink/main.typ build/examples/kitchen-sink.pdf
 
 # Compile examples/kitchen-sink.typ using typst watch mode. Meant for development.
-watch-kitchen-sink: setup _create_build_dir
-  typst watch examples/kitchen-sink.typ build/examples/kitchen-sink.pdf
+watch-kitchen-sink: _symlink_pkg _create_build_dir
+  typst watch examples/kitchen-sink/main.typ build/examples/kitchen-sink.pdf
 
 # Build package documentation using mdbook
 docs:
@@ -40,15 +40,18 @@ dev-docs:
 
 # Build the package for submission to Typst Universe, see: https://typst.app/universe/
 package:
-    python scripts/build_pkg.py
+  python scripts/build_pkg.py
 
 # Clean build artifacts
 clean:
   @{{rmrf}} build
 
-# Gets fresh environment
+# Gets fresh environment. It will be necessary to run `just setup` afterwards.
 freshenv: clean
   @{{rmrf}} .typst
 
 _create_build_dir:
   @{{mkdirp}} build/examples
+
+_symlink_pkg:
+  python scripts/symlink_pkg.py
