@@ -31,16 +31,28 @@ dependências de desenvolvimento.
 
 **Pré-requisitos de desenvolvimento:**
 - [Git](https://git-scm.com/)
-- Pixi
+- [Pixi](https://pixi.prefix.dev/latest/)
 
 Com ambos instalados abra a shell de sua preferência e rode os comandos:
 
 ```shell
 git clone https://github.com/jvcarli/eac-typst-slides-template
 cd eac-typst-slides-template
-pixi install
 pixi shell
+just setup
 ```
+
+> [!NOTE]
+> `pixi shell` instalará todas as dependências de desenvolvimento necessárias
+> e o colocará em um ambiente de desenvolvimento com elas disponíveis.
+
+> [!NOTE]
+> O uso do [Just](https://github.com/casey/just) não é obrigatório.
+> Ele é um _command runner_ utilizado para facilitar tarefas comuns de desenvolvimento.
+> Caso prefira, é possível executar os comandos manualmente,
+> basta consultar o arquivo [`justfile`](./justfile) para ver o que cada receita faz.
+> O Just será instalado ao executar `pixi shell`.
+> Você pode ver todas as receitas disponíveis digitando `just` ou `just --list`.
 
 Abra o projeto no seu editor de preferência e modifique o que desejar.
 Consulte os códigos da pasta examples/ para ver exemplos de utilização da biblioteca.
