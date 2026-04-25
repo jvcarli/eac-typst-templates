@@ -1,8 +1,12 @@
 # eac-typst-templates
 
-Template para apresentações de slides do curso de [Engenharia Acústica](https://www.eac.ufsm.br/)
+[Typst](https://github.com/typst/typst).
+
+Coleção de templates para apresentações de slides,
+relatórios técnicos e laudos do curso de
+[Engenharia Acústica](https://www.eac.ufsm.br/)
 da [Universidade Federal de Santa Maria](https://www.ufsm.br/),
-desenvolvido em [Typst](https://github.com/typst/typst).
+desenvolvidos em [Typst](https://github.com/typst/typst).
 
 ## Estrutura do projeto
 
@@ -17,7 +21,7 @@ desenvolvido em [Typst](https://github.com/typst/typst).
 │   └── lib.typ             # Código principal do template
 ├── justfile                # Definição de tasks de desenvolvimento, testes e distribuição
 ├── pixi.toml               # Configuração do Pixi
-└── typst.toml              # Arquivo de manifesto com metadados do pacote eac-typst-templates
+└── typst.toml              # Arquivo de manifesto com metadados do pacote
 ```
 
 ## Contribuindo
