@@ -1,7 +1,5 @@
 # eac-typst-templates
 
-[Typst](https://github.com/typst/typst).
-
 Coleção de templates para apresentações de slides,
 relatórios técnicos e laudos do curso de
 [Engenharia Acústica](https://www.eac.ufsm.br/)
