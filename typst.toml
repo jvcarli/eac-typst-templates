@@ -1,6 +1,6 @@
 # SEE: https://github.com/typst/packages/?tab=readme-ov-file#package-format
 [package]
-name = "eac-typst-slides-template"
+name = "eac-typst-templates"
 version = "0.1.0"
 entrypoint = "src/lib.typ"
 authors = []

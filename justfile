@@ -4,7 +4,7 @@ REPO_ROOT := justfile_directory()
 export TYPST_ROOT := REPO_ROOT
 
 # Redirect Typst's package cache to the repo root so examples can use the
-# published import syntax (#import "@preview/eac-typst-slides-template:0.1.0")
+# published import syntax (#import "@preview/eac-typst-templates:0.1.0")
 # instead of relative paths (#import "../../src/lib.typ").
 export TYPST_PACKAGE_CACHE_PATH := REPO_ROOT / ".typst/cache"
 
