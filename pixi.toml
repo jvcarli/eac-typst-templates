@@ -1,7 +1,7 @@
 [workspace]
 authors = ["João Vítor Carli Pereira <jvitor.carli@gmail.com>"]
 channels = ["conda-forge"]
-name = "eac-typst-slides-template"
+name = "eac-typst-templates"
 platforms = ["win-64", "linux-64"]
 version = "0.1.0"
 

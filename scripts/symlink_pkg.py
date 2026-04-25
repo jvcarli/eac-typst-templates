@@ -2,7 +2,7 @@
 
 """
 Links the repo root directory into the Typst package cache
-at <REPO_ROOT>/.typst/cache/preview/eac-typst-slides-template/<version>/.
+at <REPO_ROOT>/.typst/cache/preview/eac-typst-templates/<version>/.
 Uses symlinks on Unix, junctions on Windows. No admin permissions required.
 """
 

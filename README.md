@@ -1,4 +1,4 @@
-# eac-typst-slides-template
+# eac-typst-templates
 
 Template para apresentações de slides do curso de [Engenharia Acústica](https://www.eac.ufsm.br/)
 da [Universidade Federal de Santa Maria](https://www.ufsm.br/),
@@ -17,13 +17,13 @@ desenvolvido em [Typst](https://github.com/typst/typst).
 │   └── lib.typ             # Código principal do template
 ├── justfile                # Definição de tasks de desenvolvimento, testes e distribuição
 ├── pixi.toml               # Configuração do Pixi
-└── typst.toml              # Configuração do pacote eac-typst-slides-template
+└── typst.toml              # Arquivo de manifesto com metadados do pacote eac-typst-templates
 ```
 
 ## Contribuindo
 
 Contribuições são bem-vindas!
-Isso inclui [reportar _bugs_ ou sugerir melhorias](https://github.com/jvcarli/eac-typst-slides-template/issues/new),
+Isso inclui [reportar _bugs_ ou sugerir melhorias](https://github.com/jvcarli/eac-typst-templates/issues/new),
 melhorar a documentação ou abrir um _pull request_ com modificações no código.
 
 Este projeto usa o gerenciador de pacotes [Pixi](https://pixi.prefix.dev/latest/) para gerir as
@@ -36,8 +36,8 @@ dependências de desenvolvimento.
 Com ambos instalados abra a shell de sua preferência e rode os comandos:
 
 ```shell
-git clone https://github.com/jvcarli/eac-typst-slides-template
-cd eac-typst-slides-template
+git clone https://github.com/jvcarli/eac-typst-templates
+cd eac-typst-templates
 pixi shell
 just setup
 ```

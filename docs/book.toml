@@ -1,5 +1,5 @@
 [book]
-title = "Documentação do pacote Typst eac-typst-slides-template"
+title = "Documentação do pacote Typst eac-typst-templates"
 src = "."
 authors = ["João Vítor Carli Pereira", "Matheus Eduardo Lunardi Britzke"]
 language = "pt-BR"
