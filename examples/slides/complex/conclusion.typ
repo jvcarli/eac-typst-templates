@@ -1,7 +1,10 @@
+#import "@preview/touying:0.7.3": *
 #import "@preview/eac-typst-templates:0.1.0": templates
 #import templates.slides.themes.neo: *
 
-#slide(title: "Conclusão")[
+== Conclusão
+
+#slide[
   Duis aute irure dolor in reprehenderit in voluptate @ipsum2022.
   #v(0.5cm)
   - Velit esse cillum dolore eu fugiat nulla pariatur
@@ -9,7 +12,9 @@
   - Sunt in culpa qui officia deserunt mollit anim
 ]
 
-#slide(title: "Trabalhos Futuros")[
+== Trablalhos futuros
+
+#slide[
   - Lorem ipsum dolor sit amet
   - Consectetur adipiscing elit
   - Sed do eiusmod tempor incididunt
