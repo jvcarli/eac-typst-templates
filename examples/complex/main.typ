@@ -1,13 +1,14 @@
-#import "@preview/eac-typst-templates:0.1.0" as eac
+#import "@preview/eac-typst-templates:0.1.0": templates
+#import templates.slides.themes.neo: *
 
-#eac.title-slide(
+#title-slide(
   "Lorem Ipsum Dolor Sit Amet",
   subtitle: "Uma Apresentação de Exemplo Complexa",
   author: "Fulano de Tal",
   date: "2026"
 )
 
-#eac.slide(title: "Sumário")[
+#slide(title: "Sumário")[
   + Introdução
   + Um Tópico
   + Conclusão

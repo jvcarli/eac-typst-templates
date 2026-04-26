@@ -1,6 +1,7 @@
-#import "@preview/eac-typst-templates:0.1.0" as eac
+#import "@preview/eac-typst-templates:0.1.0": templates
+#import templates.slides.themes.neo: *
 
-#eac.slide(title: "Introdução")[
+#slide(title: "Introdução")[
   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   #v(0.5cm)
   - Sed do eiusmod tempor incididunt ut labore
@@ -8,7 +9,7 @@
   - Duis aute irure dolor in reprehenderit
 ]
 
-#eac.slide(title: "Motivação")[
+#slide(title: "Motivação")[
   #figure(
     rect(width: 60%, height: 4cm, fill: luma(220)),
     caption: [Figura ilustrativa placeholder]
