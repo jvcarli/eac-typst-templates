@@ -159,8 +159,8 @@
         #if name != none { text(size: 18pt, weight: "semibold", fill: c.accent)[#name]; v(1mm); line(length: 30%, stroke: 0.5pt + c.accent); v(6mm) }
         #set text(size: 14pt, fill: c.muted)
         #stack(spacing: 16pt,
-          if email != none { grid(columns: (7mm, 10pt, 1fr), align(center+horizon, image("assets/logos/heroicon_solid_envelope.svg", width: 5.5mm)), [], align(horizon, link("mailto:"+email)[#email])) },
-          if github != none { grid(columns: (7mm, 10pt, 1fr), align(center+horizon, image("assets/logos/GitHub_Invertocat_Black.svg", width: 5.5mm)), [], align(horizon, link("https://github.com/"+github)[github.com/#github])) }
+          if email != none { grid(columns: (7mm, 10pt, 1fr), align(center+horizon, image("../../../../assets/icons/heroicon_solid_envelope.svg", width: 5.5mm)), [], align(horizon, link("mailto:"+email)[#email])) },
+          if github != none { grid(columns: (7mm, 10pt, 1fr), align(center+horizon, image("../../../../assets/icons/GitHub_Invertocat_Black.svg", width: 5.5mm)), [], align(horizon, link("https://github.com/"+github)[github.com/#github])) }
         )
       ],
       if image-content != none { set std.image(width: 100%, height: 100%, fit: "cover"); image-content } else { rect(width: 100%, height: 100%, fill: c.bar-bg) }
