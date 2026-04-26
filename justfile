@@ -25,6 +25,7 @@ compile-examples: _symlink_pkg _create_build_dir
   typst compile examples/simple/main.typ build/examples/simple.pdf
   typst compile examples/complex/main.typ build/examples/complex.pdf
   typst compile examples/kitchen-sink/main.typ build/examples/kitchen-sink.pdf
+  typst compile examples/technical-report/main.typ build/examples/technical-report.pdf
 
 # Compile examples/kitchen-sink.typ using typst watch mode. Meant for development.
 watch-kitchen-sink: _symlink_pkg _create_build_dir
