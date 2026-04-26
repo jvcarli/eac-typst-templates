@@ -1,23 +1,30 @@
+#import "@preview/touying:0.7.3": *
 #import "@preview/eac-typst-templates:0.1.0": templates
 #import templates.slides.themes.neo: *
 
-#title-slide(
-  "Título da Apresentação",
-  subtitle: "Subtítulo opcional",
-  author: "Autor",
-  date: "2026"
+#show: neo-theme.with(
+  config-info(
+    title: [Apresentação simples],
+    // Você pode passar uma lista de autores.
+    author: (
+      "Fulano de Tal",
+    ),
+    date: "31 de março de 2026",
+  ),
 )
 
-#slide(title: "Introdução")[
-  - Primeiro ponto
-  - Segundo ponto
-  - Terceiro ponto
-]
+#title-slide()
 
-#slide(title: "Conteúdo")[
-  Parágrafo de exemplo com conteúdo principal do slide.
-]
+== Introdução
 
-#slide[
-  Slide sem título, apenas conteúdo.
-]
+- Primeiro ponto
+- Segundo ponto
+- Terceiro ponto
+
+== Conteúdo
+
+Parágrafo de exemplo com conteúdo principal do slide.
+
+== Fim
+
+Obrigado!
