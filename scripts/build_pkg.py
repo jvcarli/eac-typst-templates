@@ -52,6 +52,17 @@ def collect_files(ignores: list[tuple[bool, str]]) -> list[Path]:
     files = []
     for dirpath, dirnames, filenames in os.walk(REPO_ROOT, followlinks=False):
         dirpath = Path(dirpath)
+
+        # Prune ignored directories before recursing into them
+        pruned = []
+        for d in dirnames:
+            rel_dir = (dirpath / d).relative_to(REPO_ROOT)
+            if is_ignored(rel_dir, ignores):
+                continue  # skip this directory entirely
+            pruned.append(d)
+        dirnames[:] = pruned   # modify in-place for os.walk
+
+        # Collect files
         for filename in filenames:
             f = dirpath / filename
             rel = f.relative_to(REPO_ROOT)
@@ -61,7 +72,7 @@ def collect_files(ignores: list[tuple[bool, str]]) -> list[Path]:
 
 
 def main():
-    target = REPO_ROOT / "build" / PKG_NAME
+    target = REPO_ROOT / "build" / "package" / PKG_NAME
 
     print(f"Building {PKG_NAME}")
     print(f"  {REPO_ROOT}")
