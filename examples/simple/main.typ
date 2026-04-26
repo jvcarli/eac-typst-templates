@@ -1,22 +1,23 @@
-#import "@preview/eac-typst-templates:0.1.0" as eac
+#import "@preview/eac-typst-templates:0.1.0": templates
+#import templates.slides.themes.neo: *
 
-#eac.title-slide(
+#title-slide(
   "Título da Apresentação",
   subtitle: "Subtítulo opcional",
   author: "Autor",
   date: "2026"
 )
 
-#eac.slide(title: "Introdução")[
+#slide(title: "Introdução")[
   - Primeiro ponto
   - Segundo ponto
   - Terceiro ponto
 ]
 
-#eac.slide(title: "Conteúdo")[
+#slide(title: "Conteúdo")[
   Parágrafo de exemplo com conteúdo principal do slide.
 ]
 
-#eac.slide[
+#slide[
   Slide sem título, apenas conteúdo.
 ]
