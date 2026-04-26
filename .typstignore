@@ -8,7 +8,10 @@
 .pixi
 .typst
 build
+docs
+examples
 justfile
 pixi.lock
 pixi.toml
+prek.toml
 scripts
